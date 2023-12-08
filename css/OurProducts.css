@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: url(../img/BG-CIRCLES.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 520vh;
+    background-color: #15154E;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* NAVIGATION BAR PAGE SECTION*/
+
+.main-header{
+    position:fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 5vw;
+    z-index: 1000;
+}
+
+.main-navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.5vw;
+    z-index: -1; /* Ensure the image is behind the content */
+    background-color: #15154E;
+    opacity: .5;
+}
+
+.main-logo{
+    max-width: 95vw;
+    max-height: 95vw;
+    margin-top: -4;
+}
+
+.business-name {
+    position: absolute;
+    line-height: 0vw;
+    font-family: 'Outfit', sans-serif;
+    color: #F9F6EE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    padding: 0 6.2vw;
+    margin-top: -.6vw;
+    cursor: pointer;
+    font-size: 1.8vw;
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickable-name{
+    color: #F9F6EE;
+}
+
+.main-logo{
+    padding-top: 0.05vw;
+    width: 6.5vw;
+}
+
+nav ul{
+    font-family: 'Outfit', sans-serif;
+    font-size: medium;
+    margin-right: 0vw;
+    margin-top: -6;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #F9F6EE;
+    font-size: 1.5vw;
+    font-weight: 510;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: .2vw;
+    background: #8E8EDB;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li:hover {
+    color: #8E8EDB;
+}
+
+.menu-title-divider{
+    display:inline-flex;
+    position: relative;
+    margin-top: 8vw;
+    margin-left: 6.4vw;
+    font-family: 'Outfit', sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    color: #F9F6EE;
+    /*border: solid 2px #F9F6EE;*/
+}
+
+.menu{
+    position: relative;
+    margin-left: -10px;
+}
+
+.main-drinks-name{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.9vw;
+    font-weight: 600; 
+    cursor:auto;
+}
+
+.drinks-types-divider{
+    /*border: solid 2px #F9F6EE;*/
+    display:inline-table;
+    position:absolute;
+    margin-top: 18vw;
+    margin-left: -11.5vw;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #F9F6EE;
+    line-height: 3.2vw;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+}
+
+.drinks-types-divider a{
+    color: #F9F6EE;
+}
+
+.drinks-types-divider a {
+    position: relative;
+    color: #F9F6EE;
+    text-decoration: none;
+}
+
+.drinks-types-divider a::after {
+    content: '';
+    width: 0;
+    height: 0.2vw;
+    background: #ACACFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.drinks-types-divider a:hover::after {
+    width: 100%;
+}
+
+.drinks-types-divider a:hover {
+    color: #F9F6EE;
+}
+
+
+.new-flavors-divider{
+    position: absolute;
+    margin-top: 4vw;
+    margin-left: 30vw;
+    /*border: solid 2px #F9F6EE;*/
+}
+
+.new-flavor-title{
+    position: relative;
+    margin-left: -5vw;
+    padding-bottom: 2vw;
+    padding-top: 1vw;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #F9F6EE;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, auto); 
+    gap: 3vw;
+    justify-content: center;
+    align-content: center; 
+    margin-bottom: -12vw;
+}
+
+.new-flavor-container1,
+.new-flavor-container2,
+.new-flavor-container3,
+.new-flavor-container4,
+.new-flavor-container5,
+.new-flavor-container6,
+.new-flavor-container7,
+.new-flavor-container8,
+.new-flavor-container9,
+.new-flavor-container10,
+.new-flavor-container11,
+.new-flavor-container12 {
+    position: relative;
+    width: 17.5vw;
+    height: 21.5vw;
+    border-radius: 25px;
+    background-color: #F9F6EE;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.new-flavor-title2{
+    position: absolute;
+    margin-left: -5vw;
+    padding-bottom: 2vw;
+    margin-top: -5.5vw;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #F9F6EE;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, auto); 
+    gap: 3vw;
+    justify-content: center;
+    align-content: center; 
+    margin-top: -5vw;
+    margin-bottom: -19vw;
+}
+
+.new-flavor-container4-oreo-series{
+    width: 17.5vw;
+    height: 21.5vw;
+    border-radius: 25px;
+    left: 20.5vw;
+    background-color: #F9F6EE;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.new-flavor-title3{
+    margin-left: -5vw;
+    padding-top: 4.5vw;
+    padding-bottom: 2vw;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #F9F6EE;
+}
