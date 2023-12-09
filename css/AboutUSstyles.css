@@ -40,16 +40,20 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 6.5vw;
+    height: 6.2vw;
     z-index: -1; /* Ensure the image is behind the content */
     background-color: #15154E;
-    opacity: .5;
+    opacity: .45;
 }
 
 .main-logo{
-    max-width: 95vw;
-    max-height: 95vw;
+    max-width: 90vw;
+    max-height: 90vw;
     margin-top: -4;
+}
+
+.clickable-name{
+    color: #F9F6EE;
 }
 
 .business-name {
@@ -57,22 +61,17 @@ html{
     line-height: 0vw;
     font-family: 'Outfit', sans-serif;
     color: #F9F6EE;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     padding: 0 6.2vw;
-    margin-top: -.6vw;
+    margin-top: 0vw;
     cursor: pointer;
-    font-size: 1.8vw;
-    text-decoration: none;
-    color: inherit;
-}
-
-.clickable-name{
-    color: #F9F6EE;
+    font-size: 1.6vw;
 }
 
 .main-logo{
-    padding-top: 0.05vw;
-    width: 6.5vw;
+    padding-top: 0.25vw;
+    margin-left: .8vw;
+    width: 5.6vw;
 }
 
 nav ul{

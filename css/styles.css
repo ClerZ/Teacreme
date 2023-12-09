@@ -40,15 +40,15 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 6.5vw;
+    height: 6.2vw;
     z-index: -1; /* Ensure the image is behind the content */
     background-color: #15154E;
-    opacity: .5;
+    opacity: .45;
 }
 
 .main-logo{
-    max-width: 95vw;
-    max-height: 95vw;
+    max-width: 90vw;
+    max-height: 90vw;
     margin-top: -4;
 }
 
@@ -61,23 +61,24 @@ html{
     line-height: 0vw;
     font-family: 'Outfit', sans-serif;
     color: #F9F6EE;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     padding: 0 6.2vw;
-    margin-top: -.6vw;
+    margin-top: 0vw;
     cursor: pointer;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 }
 
 .main-logo{
-    padding-top: 0.05vw;
-    width: 6.5vw;
+    padding-top: 0.25vw;
+    margin-left: .8vw;
+    width: 5.6vw;
 }
 
 nav ul{
     font-family: 'Outfit', sans-serif;
     font-size: medium;
     margin-right: 0vw;
-    margin-top: -6;
+    margin-top: 0;
 }
 
 nav ul li{
@@ -96,14 +97,14 @@ nav ul li a{
     float: left;
     position: relative;
     display: flex;
-    height: 40vw;
+    height: 42vw;
     padding: 0 0px;
     margin-top: 6vw;
-    padding-left: 50vw;
+    padding-left: 48vw;
 }
 
 .main-title-container{
-    margin-top: 2vw;
+    margin-top: 0vw;
 }
 
 .btnProducts,

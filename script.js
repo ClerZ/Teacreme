@@ -1,27 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const contentDiv = document.getElementById('content');
-    const links = document.querySelectorAll('.page-link');
+  // Add smooth scrolling to links with the "scroll-link" class
+  var scrollLinks = document.querySelectorAll('.scroll-link');
   
-    function loadPage(url) {
-      // Fade out animation
-      contentDiv.classList.add('fade-out');
-      contentDiv.addEventListener('transitionend', function () {
-        fetch(url)
-          .then(response => response.text())
-          .then(html => {
-            contentDiv.innerHTML = html;
-            contentDiv.classList.remove('fade-out');
-            contentDiv.classList.add('fade-in');
-          });
-      }, { once: true });
-    }
-  
-    function handleClick(event) {
+  scrollLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
       event.preventDefault();
-      const url = event.target.getAttribute('href');
-      loadPage(url);
-    }
-  
-    links.forEach(link => link.addEventListener('click', handleClick));
+
+      var targetId = this.getAttribute('href').substring(1);
+      var targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      }
+    });
   });
-  
+});

@@ -11,7 +11,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 520vh;
+    height: 0vw;
     background-color: #15154E;
 }
 
@@ -40,16 +40,20 @@ html{
     top: 0;
     left: 0;
     width: 100%;
-    height: 6.5vw;
+    height: 6.2vw;
     z-index: -1; /* Ensure the image is behind the content */
     background-color: #15154E;
-    opacity: .5;
+    opacity: .45;
 }
 
 .main-logo{
-    max-width: 95vw;
-    max-height: 95vw;
+    max-width: 90vw;
+    max-height: 90vw;
     margin-top: -4;
+}
+
+.clickable-name{
+    color: #F9F6EE;
 }
 
 .business-name {
@@ -57,22 +61,17 @@ html{
     line-height: 0vw;
     font-family: 'Outfit', sans-serif;
     color: #F9F6EE;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     padding: 0 6.2vw;
-    margin-top: -.6vw;
+    margin-top: 0vw;
     cursor: pointer;
-    font-size: 1.8vw;
-    text-decoration: none;
-    color: inherit;
-}
-
-.clickable-name{
-    color: #F9F6EE;
+    font-size: 1.6vw;
 }
 
 .main-logo{
-    padding-top: 0.05vw;
-    width: 6.5vw;
+    padding-top: 0.25vw;
+    margin-left: .8vw;
+    width: 5.6vw;
 }
 
 nav ul{
@@ -126,7 +125,7 @@ nav ul li a{
 
 .menu{
     position: relative;
-    margin-left: -10px;
+    margin-left: -4px;
 }
 
 .main-drinks-name{
@@ -184,15 +183,19 @@ nav ul li a{
 .new-flavors-divider{
     position: absolute;
     margin-top: 4vw;
-    margin-left: 30vw;
+    margin-left: 28vw;
+    max-height: 54vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    overflow: auto;
     /*border: solid 2px #F9F6EE;*/
 }
 
 .new-flavor-title{
     position: relative;
-    margin-left: -5vw;
+    margin-left: -4vw;
     padding-bottom: 2vw;
-    padding-top: 1vw;
+    padding-top: .7vw;
     font-family: 'Outfit', sans-serif;
     font-size: 2.5vw;
     font-weight: 600;
@@ -233,7 +236,7 @@ nav ul li a{
 
 .new-flavor-title2{
     position: absolute;
-    margin-left: -5vw;
+    margin-left: -4vw;
     padding-bottom: 2vw;
     margin-top: -5.5vw;
     font-family: 'Outfit', sans-serif;
@@ -267,7 +270,7 @@ nav ul li a{
 }
 
 .new-flavor-title3{
-    margin-left: -5vw;
+    margin-left: -4vw;
     padding-top: 4.5vw;
     padding-bottom: 2vw;
     font-family: 'Outfit', sans-serif;
@@ -275,3 +278,111 @@ nav ul li a{
     font-weight: 600;
     color: #F9F6EE;
 }
+
+
+.footer-bottom{
+    top: 65vw;
+    height: 19vw;
+    position: relative;
+    width: 100%; /* You can adjust this percentage as needed */
+    padding-bottom: 2%; /* This ensures a square shape */
+    background-color: #00127af4; /* Change the background color as desired */
+    mix-blend-mode: hard-light;
+    box-shadow: inset 0px 5px 0px rgba(0, 0, 0, .25);
+    box-shadow: inset 0px 2px 4px 4px rgba(0, 0, 0, .25);
+  }
+
+.bottom-ourproducts,
+.bottom-AboutUs,
+.bottom-Services{
+    color: #F9F6EE;
+}
+
+.main-name1-footer{
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8vw;
+    color: #F9F6EE;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.main-name2-footer{
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8vw;
+    top: -4vw;
+    color: #F9F6EE;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.middle-name-logo{
+    position: absolute;
+    margin-top: -13.5vw;
+    margin-left: 47.5vw;
+}
+
+.footer-logo{
+    position: relative;
+    width: 6vw;
+    margin-top: -1.85vw;
+    margin-left: -6vw;
+}
+
+.footer-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjust alignment as needed */
+    padding-top: 3.5vw; /* Adjust as needed */
+    margin-left: 15vw;
+    font-family: 'Outfit', sans-serif;
+    line-height: 2vw; /* Adjust line height as needed */
+    font-size: 1.45vw; /* Adjust font size as needed */
+    color: #F9F6EE;
+}
+
+.footer-buttons a {
+    margin-bottom: 0.5vw;
+    text-decoration: none;
+    color: #F9F6EE;
+    position: relative;
+}
+
+.footer-buttons a::after {
+    content: '';
+    width: 0%;
+    height: 0.2vw;
+    background: #ACACFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footer-buttons a:hover::after {
+    width: 100%;
+}
+
+.footer-buttons a:hover {
+    color: #F9F6EE;
+}
+
+
+.footer-info {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5vw;
+    color: #F9F6EE;
+    bottom: 13.5vw;
+    padding-right: 12.5vw;
+    position: relative;
+    float: right;
+  }
+
+.date-time{
+    position: relative;
+    padding-top: -1vw;
+    padding-left: -2vw;
+    line-height: 2vw;
+}
+
