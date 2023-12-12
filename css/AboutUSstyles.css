@@ -250,6 +250,18 @@ nav ul li a{
     background-color: #15154E; /* Set the color of the track */
 }
 
+::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #15154E; /* Set the color of the thumb (the draggable part) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #8E8EDB; /* Set the color of the track (the non-draggable part) */
+  }
+
 
 .story-description{
     position: relative;

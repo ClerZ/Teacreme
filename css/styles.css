@@ -19,6 +19,18 @@ html{
     font-size: 16px;
 }
 
+::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #15154E; /* Set the color of the thumb (the draggable part) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #8E8EDB; /* Set the color of the track (the non-draggable part) */
+  }
+
 /* NAVIGATION BAR PAGE SECTION*/
 
 .main-header{
@@ -405,6 +417,13 @@ nav ul li a{
     transition: background-color 0.3s, color 0.3s;
     background-color: #15154E;
     color: #F9F6EE;
+  }
+
+  .shopping-cart{
+    position: relative;
+    top: 26.2vw;
+    left: 20vw;
+    width: 3vw;
   }
 
 /*PLACE PAGE SECTION*/
