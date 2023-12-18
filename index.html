@@ -19,7 +19,20 @@
                         <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
                         <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
                         <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
-                        <li><a href="#" class="btnContact" id="contactbtn">Contact Us</a></li>
+                        <li><a class="open-cart-button" onclick="toggleCart()"><img src="img\NAV-CART-ICON.png" class="cart" alt="cart"></a></li>
+
+                        <div class="cart-container">
+                            <div class="cart-header">
+                                <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
+                                <p class="my-cart">My Cart</p>
+                            </div>
+                            <div class="cart-items"></div>
+                            <ul id="cartItems"></ul>
+                            <div class="checkout-div" id="cartSummary">
+                                <p class="final-amount">Total: <span id="totalAmount">Php 0.00</span></p>
+                                <button id="checkoutButton">Checkout Now</button>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </nav>

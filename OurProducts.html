@@ -15,13 +15,28 @@
             <img src="img\LOGO.png" class="main-logo" alt="Logo">
             <h1 class="business-name"><a href="index.html" class="clickable-name">TEA CREME</a></h1>
             <nav class="top-menu">
+
                 <div class="nav-links">
                     <ul>
                         <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
                         <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
                         <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
-                        <li><a href="#" class="btnContact" id="contactbtn">Contact Us</a></li>
+                        <li><a class="open-cart-button" onclick="toggleCart()"><img src="img\NAV-CART-ICON.png" class="cart" alt="cart"></a></li>
+
+                        <div class="cart-container">
+                            <div class="cart-header">
+                                <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
+                                <p class="my-cart">My Cart</p>
+                            </div>
+                            <div class="cart-items"></div>
+                            <ul id="cartItems"></ul>
+                            <div class="checkout-div" id="cartSummary">
+                                <p class="final-amount">Total: <span id="totalAmount">Php 0.00</span></p>
+                                <button id="checkoutButton">Checkout Now</button>
+                            </div>
+                        </div>
                     </ul>
+
                 </div>
             </nav>
         </header>
@@ -39,6 +54,7 @@
             <p><a href="#classic-milktea" class="scroll-link">Classic Milktea</a></p>
             <p><a href="#chocolate-milktea" class="scroll-link">Chocolate Milktea</a></p>
         </div>
+        
         <div class="search-container">
             <input type="text" class="search-input" id="searchInput" placeholder="">
             <button class="search-button" onclick="performSearch()">
@@ -52,18 +68,18 @@
             <div class="container1">
                 <div class="new-flavor-container1">
                     <p class="txtformat">Avocado</p>
-                    <button class="nf1-size1" type="button">16 oz</button>
-                    <button class="nf1-size2" type="button">22 oz</button>
+                    <button class="nf1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf1-size1" type="button" data-size="22 oz">22 oz</button>
                 </div>
                 <div class="new-flavor-container2">
                     <p class="txtformat">Honey Dew</p>
-                    <button class="nf2-size1" type="button">16 oz</button>
-                    <button class="nf2-size2" type="button">22 oz</button>
+                    <button class="nf2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf2-size2" type="button" data-size="16 oz">22 oz</button>
                 </div>
                 <div class="new-flavor-container3">
                     <p class="txtformat">Espresso</p>
-                    <button class="nf3-size1" type="button">16 oz</button>
-                    <button class="nf3-size2" type="button">22 oz</button>
+                    <button class="nf3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf3-size2" type="button" data-size="22 oz">22 oz</button>
                 </div>
                 <div class="new-flavor-container4">
                     <p class="txtformat">Caramel Machito</p>
@@ -351,5 +367,6 @@
             </div>
         </div>
         <script src="script.js"></script>
+        <script src="addToCartScript.js"></script>
     </body>
 </html>

@@ -154,3 +154,16 @@ function performSearch() {
     });
   }
 }
+
+function toggleCart() {
+  console.log("working");
+  const cartContainer = document.querySelector('.cart-container');
+  const cartContainerStyle = window.getComputedStyle(cartContainer);
+  const isOpen = cartContainerStyle.getPropertyValue('right') === '0px' || cartContainerStyle.getPropertyValue('right') === '';
+
+  if (isOpen) {
+    cartContainer.style.right = '-380px';
+  } else {
+    cartContainer.style.right = '0px';
+  }
+}
