@@ -1,10 +1,266 @@
 // Your JavaScript code
 
 const itemDetails = {
+  //New Flavours
   'Avocado': {
     '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
     '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
-  }
+  },
+
+  'Honey Dew': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Espresso': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Caramel Machito': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Black Jungle': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Nuttella Cream': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Cashew White': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Coffe Cake': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Meiji Apollo': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+    //Frappe Series
+    'Mango Graham': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Strawberry': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Ube Quezo': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Coffee Jelly': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Salted Caramel': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Ferrero Almond': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Matcha White': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Blueberry': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+  
+    'Oreo Flurry': {
+      '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+      '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+    },
+
+  //Lemonade Series
+   'Lemon Yakult Cucumber': {
+    '16 oz': { price: 5.99, image: 'classics/wintermelon.png' },
+    '22 oz': { price: 7.99, image: 'classics/wintermelon.png' }
+  },
+
+  'Lemon Yakult': {
+    '16 oz': { price: 5.99, image: 'classics/okinawa.png' },
+    '22 oz': { price: 7.99, image: 'classics/okinawa.png' }
+  },
+
+  'Lemon Cucumber': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  //Oero Series
+  'Oreo Cheesecake': {
+    '16 oz': { price: 5.99, image: 'classics/wintermelon.png' },
+    '22 oz': { price: 7.99, image: 'classics/wintermelon.png' }
+  },
+
+  'Oreo MilkCake': {
+    '16 oz': { price: 5.99, image: 'classics/okinawa.png' },
+    '22 oz': { price: 7.99, image: 'classics/okinawa.png' }
+  },
+
+  'Oreo Cookie Crumble': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },  
+
+  'Oreo Strawberry': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },  
+
+  //Creamcheese Series
+  'Cheesecake': {
+    '16 oz': { price: 5.99, image: 'classics/wintermelon.png' },
+    '22 oz': { price: 7.99, image: 'classics/wintermelon.png' }
+  },
+
+  'Matcha': {
+    '16 oz': { price: 5.99, image: 'classics/okinawa.png' },
+    '22 oz': { price: 7.99, image: 'classics/okinawa.png' }
+  },
+
+  'Cheese Mango': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Salted Caramel': {
+    '16 oz': { price: 5.99, image: 'classics/cookiesNcream.png' },
+    '22 oz': { price: 7.99, image: 'classics/cookiesNcream.png' }
+  },
+
+  'Ube Taro': {
+    '16 oz': { price: 5.99, image: 'classics/hokkaido.png' },
+    '22 oz': { price: 7.99, image: 'classics/hokkaido.png' }
+  },
+
+  'Strawberry': {
+    '16 oz': { price: 5.99, image: 'classics/vanilla.png' },
+    '22 oz': { price: 7.99, image: 'classics/vanilla.png' }
+  },
+
+  'Chucky': {
+    '16 oz': { price: 5.99, image: 'classics/saltedCaramel.png' },
+    '22 oz': { price: 7.99, image: 'classics/saltedCaramel.png' }
+  },
+
+  'Red Velvet': {
+    '16 oz': { price: 5.99, image: 'classics/thai.png' },
+    '22 oz': { price: 7.99, image: 'classics/thai.png' }
+  },
+
+  'Melona': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },
+
+  'Hershey Cremecheese': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },   
+
+  'Dark Chocolate': {
+    '16 oz': { price: 5.99, image: 'classics/thai.png' },
+    '22 oz': { price: 7.99, image: 'classics/thai.png' }
+  },
+
+  'Chocolate': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },  
+
+  //CLASSIC MILKTEA
+  'Wintermellon': {
+    '16 oz': { price: 5.99, image: 'classics/wintermelon.png' },
+    '22 oz': { price: 7.99, image: 'classics/wintermelon.png' }
+  },
+
+  'Okinawa': {
+    '16 oz': { price: 5.99, image: 'classics/okinawa.png' },
+    '22 oz': { price: 7.99, image: 'classics/okinawa.png' }
+  },
+
+  'Cheesecake': {
+    '16 oz': { price: 5.99, image: 'classics/cheesecake.png' },
+    '22 oz': { price: 7.99, image: 'classics/cheesecake.png' }
+  },
+
+  'Cookies N Cream': {
+    '16 oz': { price: 5.99, image: 'classics/cookiesNcream.png' },
+    '22 oz': { price: 7.99, image: 'classics/cookiesNcream.png' }
+  },
+
+  'Hokkaido': {
+    '16 oz': { price: 5.99, image: 'classics/hokkaido.png' },
+    '22 oz': { price: 7.99, image: 'classics/hokkaido.png' }
+  },
+
+  'Vanilla': {
+    '16 oz': { price: 5.99, image: 'classics/vanilla.png' },
+    '22 oz': { price: 7.99, image: 'classics/vanilla.png' }
+  },
+
+  'Salted Caramel': {
+    '16 oz': { price: 5.99, image: 'classics/saltedCaramel.png' },
+    '22 oz': { price: 7.99, image: 'classics/saltedCaramel.png' }
+  },
+
+  'Thai': {
+    '16 oz': { price: 5.99, image: 'classics/thai.png' },
+    '22 oz': { price: 7.99, image: 'classics/thai.png' }
+  },
+
+  'White Rabbit': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },
+
+  'Oreo Cremecheese': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },
+
+  //Chocolate Miktea
+
+  'Chocolate': {
+    '16 oz': { price: 5.99, image: 'classics/thai.png' },
+    '22 oz': { price: 7.99, image: 'classics/thai.png' }
+  },
+
+  'Dark Chocolate': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },
+
+  'Hershey Chocolate': {
+    '16 oz': { price: 5.99, image: 'classics/whiteRabbit.png' },
+    '22 oz': { price: 7.99, image: 'classics/whiteRabbit.png' }
+  },  
+  
+
+  
   
 };
 
@@ -17,12 +273,12 @@ function addToCart(flavor, size) {
   const existingCartItem = findCartItem(flavor, size);
 
   if (existingCartItem) {
-    existingCartItem.quantity += 1;
-    updateCartItem(existingCartItem);
-  } else {
+    updateQuantity(existingCartItem, 1);
+    console.log("After updateQuantity:", existingCartItem.quantity);
+} else {
     const cartItem = createCartItem(flavor, size, 1);
     cartItemsContainer.appendChild(cartItem);
-  }
+}
 
   saveCartToLocalStorage();
   updateTotalAmount();
@@ -59,16 +315,31 @@ function createCartItem(flavor, size, quantity) {
   flavorImage.alt = flavor;
   flavorImage.className = 'cart-item-image';
 
-  const cartItemText = document.createElement('p');
+  const cartItemText = document.createElement('div');
   cartItemText.className = 'cart-item-text';
-  cartItemText.textContent = `${flavor} - ${size} - ${quantity} - ₱ ${totalPrice.toFixed(2)}`;
+  cartItemText.innerHTML = `<br>${flavor}<br> ${size}`;
+
+  const priceText = document.createElement('p');
+  priceText.className = 'cart-item-price';
+  priceText.textContent = `₱${totalPrice.toFixed(2)}`;
 
   const quantityContainer = document.createElement('div');
   quantityContainer.className = 'quantity-container';
+  quantityContainer.style.position = 'relative';
 
   const minusButton = document.createElement('span');
   minusButton.className = 'quantity-button';
   minusButton.textContent = '-';
+  minusButton.style.fontSize = "1vw";
+  minusButton.style.border = '.15vw solid #15154E'; // Set border style
+  minusButton.style.width = '.8vw'; // Set width
+  minusButton.style.position = "absolute";
+  minusButton.style.height = '.8vw'; // Set height
+  minusButton.style.display = 'flex'; // Make sure it's a flex container
+  minusButton.style.justifyContent = 'center'; // Center the text horizontally
+  minusButton.style.alignItems = 'center'; // Center the text vertically
+  minusButton.style.paddingTop = '.25vw';
+  minusButton.style.paddingBottom = '.45vw'
   minusButton.addEventListener('click', function () {
     updateQuantity(cartItem, -1);
   });
@@ -76,23 +347,33 @@ function createCartItem(flavor, size, quantity) {
   const plusButton = document.createElement('span');
   plusButton.className = 'quantity-button';
   plusButton.textContent = '+';
+  plusButton.style.fontSize = "1vw";
+  plusButton.style.border = '.15vw solid #15154E';
+  plusButton.style.width = '.8vw'; // Set width
+  plusButton.style.height = '.8vw'; // Set height
+  plusButton.style.display = 'flex'; // Make sure it's a flex container
+  plusButton.style.position = "absolute";
+  plusButton.style.justifyContent = 'center'; // Center the text horizontally
+  plusButton.style.alignItems = 'center'; // Center the text vertically
+  plusButton.style.marginLeft = '3vw';
+  plusButton.style.marginTop = '.1.8vw';  
+  plusButton.style.paddingTop = '.35vw';
+  plusButton.style.paddingBottom = '.38vw';
   plusButton.addEventListener('click', function () {
     updateQuantity(cartItem, 1);
   });
 
+  const quantityText = document.createTextNode(`${quantity}`);
+
   const quantityTextbox = document.createElement('input');
-  quantityTextbox.type = 'number';
+  quantityTextbox.type = 'text';
   quantityTextbox.className = 'quantity-textbox';
   quantityTextbox.value = quantity;
-  quantityTextbox.min = 0;
-  quantityTextbox.step = 1;
-  quantityTextbox.addEventListener('input', function () {
-    updateQuantity(cartItem, 0);
-  });
 
   quantityContainer.appendChild(minusButton);
-  quantityContainer.appendChild(quantityTextbox);
+  quantityContainer.appendChild(quantityTextbox);  // Add the quantity textbox
   quantityContainer.appendChild(plusButton);
+  
 
   const deleteButton = document.createElement('span');
   deleteButton.className = 'delete-button';
@@ -103,6 +384,7 @@ function createCartItem(flavor, size, quantity) {
 
   cartItem.appendChild(flavorImage);
   cartItem.appendChild(cartItemText);
+  cartItem.appendChild(priceText); // Add the price to cartItem
   cartItem.appendChild(quantityContainer);
   cartItem.appendChild(deleteButton);
 
@@ -110,6 +392,7 @@ function createCartItem(flavor, size, quantity) {
 
   return cartItemContainer;
 }
+
 
 function generateItemId() {
   return `cart-item-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
@@ -126,6 +409,24 @@ function updateQuantity(cartItem, change) {
     updateTotalAmount();
     saveCartToLocalStorage();
   }
+
+  const flavor = cartItem.dataset.flavor;
+  const size = cartItem.dataset.size;
+  const quantity = cartItem.quantity;
+
+  // Select the quantity container, cart item text, and price text
+  const quantityContainer = cartItem.querySelector('.quantity-container');
+  const cartItemText = cartItem.querySelector('.cart-item-text');
+  const priceText = cartItem.querySelector('.cart-item-price');
+
+  // Update the quantity and price in the cart item text
+  cartItemText.innerHTML = `<br>${flavor}<br>${size}<br>`;
+  priceText.textContent = `₱${calculateTotalPrice(flavor, size, quantity).toFixed(2)}`;
+
+  // Update the value of the quantity input
+  const quantityTextbox = quantityContainer.querySelector('.quantity-textbox');
+  console.log(quantityTextbox); // Add this line
+  quantityTextbox.value = quantity;
 }
 
 function deleteCartItem(cartItem) {
@@ -136,54 +437,63 @@ function deleteCartItem(cartItem) {
 }
 
 //CLERWIN
+// Update the saveCartToLocalStorage function to include the total amount
 function saveCartToLocalStorage() {
   const cartItems = document.querySelectorAll('.cart-item');
   const cartData = [];
+  let totalAmount = 0;
 
   cartItems.forEach(cartItem => {
-    const itemId = cartItem.dataset.itemId; // Use the unique itemId
+    const itemId = cartItem.dataset.itemId;
     const flavor = cartItem.dataset.flavor;
     const size = cartItem.dataset.size;
     const quantity = cartItem.quantity;
 
+    totalAmount += calculateTotalPrice(flavor, size, quantity);
+
     cartData.push({ itemId, flavor, size, quantity });
   });
 
-  localStorage.setItem('cart', JSON.stringify(cartData));
+  const cartAndTotal = { cartData, totalAmount };
+  localStorage.setItem('cart', JSON.stringify(cartAndTotal));
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-  loadCartFromLocalStorage();
-  updateTotalAmount();
-});
 
 function loadCartFromLocalStorage() {
   const cartItemsContainer = document.getElementById('cartItems');
   const cartDataJSON = localStorage.getItem('cart');
-  const cartData = JSON.parse(cartDataJSON) || [];
+  const cartAndTotal = JSON.parse(cartDataJSON) || { cartData: [], totalAmount: 0 };
 
-  // Clear existing items before loading from local storage
   cartItemsContainer.innerHTML = '';
 
-  // Variable to keep track of the number of items loaded
-  let itemsLoaded = 0;
+  // Create a function to handle item loading and return a Promise
+  function loadItem(item) {
+    return new Promise(resolve => {
+      const { itemId, flavor, size, quantity } = item;
+      const cartItem = createCartItem(flavor, size, quantity);
 
-  cartData.forEach(item => {
-    const { itemId, flavor, size, quantity } = item;
-    const cartItem = createCartItem(flavor, size, quantity);
+      const img = cartItem.querySelector('.cart-item-image');
 
-    // Wait for the image to load before appending the item to the cart
-    cartItem.querySelector('.cart-item-image').onload = function () {
+      // Use the onload event to resolve the Promise
+      img.onload = () => resolve();
+
+      // Trigger the onload event in case the image is already cached
+      if (img.complete) {
+        img.onload();
+      }
+
       cartItem.dataset.itemId = itemId;
       cartItemsContainer.appendChild(cartItem);
       updateCartItem(cartItem);
+    });
+  }
 
-      // Increment the counter and check if all items are loaded
-      itemsLoaded++;
-      if (itemsLoaded === cartData.length) {
-        updateTotalAmount(); // Recalculate the total amount after loading all items
-      }
-    };
+  // Create an array of Promises for each item
+  const itemPromises = cartAndTotal.cartData.map(loadItem);
+
+  // Wait for all Promises to resolve before updating total amount and saving to local storage
+  Promise.all(itemPromises).then(() => {
+    updateTotalAmount(cartAndTotal.totalAmount);
+    saveCartToLocalStorage();
   });
 }
 
@@ -195,12 +505,13 @@ function updateCartItem(cartItem) {
   const totalPrice = calculateTotalPrice(flavor, size, quantity);
 
   const cartItemText = cartItem.querySelector('.cart-item-text');
-  cartItemText.textContent = `${flavor} - ${size} - ${quantity} - ₱ ${totalPrice.toFixed(2)}`;
+  cartItemText.innerHTML = `<br>${flavor}<br>${size}<br>`;
 }
 
 function updateTotalAmount() {
   const cartItems = document.querySelectorAll('.cart-item');
   let totalAmount = 0;
+  let totalItems = 0;
 
   cartItems.forEach(cartItem => {
     const flavor = cartItem.dataset.flavor;
@@ -208,33 +519,39 @@ function updateTotalAmount() {
     const quantity = cartItem.quantity;
 
     totalAmount += calculateTotalPrice(flavor, size, quantity);
+    totalItems += quantity;
   });
 
-  document.getElementById('yourTotalAmountElement').textContent = `Total: ₱ ${totalAmount.toFixed(2)}`;
+  console.log("Total amount calculated:", totalAmount);
+  document.getElementById('yourTotalAmountElement').textContent = ` ₱ ${totalAmount.toFixed(2)}`;
+  document.getElementById('totalItemsElement').textContent = `${totalItems}`;
 }
 
-const flavorContainer = document.querySelector('.new-flavor-container1');
-flavorContainer.addEventListener('click', function (event) {
-  if (event.target.tagName === 'BUTTON') {
-    const flavor = flavorContainer.querySelector('.txtformat').textContent;
-    const size = event.target.dataset.size;
-    addToCart(flavor, size);
-    updateTotalAmount();
-    messageAddToCart();
-  }
+document.addEventListener('DOMContentLoaded', function () {
+  loadCartFromLocalStorage();
+  updateTotalAmount();
 });
+
+
+for (let i = 1; i <= 47; i++) {
+  const flavorContainer = document.querySelector(`.new-flavor-container${i}`);
+  flavorContainer.addEventListener('click', function (event) {
+    console.log('Container clicked:', i);
+    if (event.target.tagName === 'BUTTON') {
+      console.log('Button clicked:', event.target.textContent);
+      const flavor = flavorContainer.querySelector('.txtformat').textContent;
+      const size = event.target.dataset.size;
+      addToCart(flavor, size);
+      updateTotalAmount();
+    }
+  });
+}
+
 
 const checkoutButton = document.getElementById('checkoutButton');
 checkoutButton.addEventListener('click', function () {
   alert('Checkout button clicked! Implement your checkout logic.');
 });
 
-function messageAddToCart() {
-  const cartMessage = document.getElementById('cartMessage');
-  cartMessage.classList.remove('hidden');
-  setTimeout(() => {
-    cartMessage.classList.add('hidden');
-  }, 2000);
-}
 
 

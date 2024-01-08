@@ -19,17 +19,19 @@
                         <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
                         <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
                         <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
-                        <li><a class="open-cart-button" onclick="toggleCart()"><img src="img\NAV-CART-ICON.png" class="cart" alt="cart"></a></li>
-
+                        <li><a class="open-cart-button" onclick="toggleCart()">
+                            <img src="img\NAV-CART-ICON.png" class="cart" alt="cart">
+                            <span id="totalItemsElement" class="total-items-circle">0</span>
+                        </a></li>
+                        
                         <div class="cart-container">
                             <div class="cart-header">
                                 <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
                                 <p class="my-cart">My Cart</p>
                             </div>
-                            <div class="cart-items"></div>
                             <ul id="cartItems"></ul>
                             <div class="checkout-div" id="cartSummary">
-                                <p class="final-amount">Total: <span id="totalAmount">Php 0.00</span></p>
+                                <p class="final-amount">Total: <span id="yourTotalAmountElement">Php 0.00</span></p>
                                 <button id="checkoutButton">Checkout Now</button>
                             </div>
                         </div>
@@ -59,26 +61,24 @@
         <div class="bestsellers-container-class">
             <h1 class="best-sellers">BEST SELLERS</h1>
             <div class="rounded-bottom-container-square">
-                <div class="rounded-bottom-square1">
+                <div class="new-flavor-container1">
                     <img src="img\bestsellers1.png" class="bestsellers1">
-                    <p class="name-bestsellers1">WINTERMELON</p>
-                    <img src="img\shopping-cart.png" alt="cart" class="shopping-cart">
-                    <button class="bs1-size1" type="button" id="wintermellon-16oz">16 oz</button>
-                    <button class="bs1-size2" type="button" id="wintermellon-22oz">22 oz</button>
+                    <p class="txtformat">Wintermellon</p>
+                    <button class="bs1-size1" type="button" id="wintermellon-16oz" data-size="16 oz">16 oz</button>
+                    <button class="bs1-size2" type="button" id="wintermellon-22oz" data-size="22 oz">22 oz</button>
+                    
                 </div>
-                <div class="rounded-bottom-square2">
+                <div class="new-flavor-container2">
                     <img src="img\bestsellers2.png" class="bestsellers2">
-                    <p class="name-bestsellers2">OKINAWA</p>
-                    <img src="img\shopping-cart.png" alt="cart" class="shopping-cart">
-                    <button class="bs2-size1" type="button" id="okinawa-16oz">16 oz</button>
-                    <button class="bs2-size2" type="button" id="okinawa-22oz">22 oz</button>
+                    <p class="txtformat">Okinawa</p>
+                    <button class="bs2-size1" type="button" id="okinawa-16oz" data-size="16 oz">16 oz</button>
+                    <button class="bs2-size2" type="button" id="okinawa-22oz" data-size="22 oz">22 oz</button>
                 </div>
-                <div class="rounded-bottom-square3">
+                <div class="new-flavor-container3">
                     <img src="img\bestsellers3.png" class="bestsellers3">
-                    <p class="name-bestsellers3">OREO CREMECHEESE</p>
-                    <img src="img\shopping-cart.png" alt="cart" class="shopping-cart">
-                    <button class="bs3-size1" type="button" id="oreo-cremecheese-16oz">16 oz</button>
-                    <button class="bs3-size2" type="button" id="oreo-cremecheese-16oz">22 oz</button>
+                    <p class="txtformat">Oreo Cremecheese</p>
+                    <button class="bs3-size1" type="button" id="oreo-cremecheese-16oz" data-size="16 oz">16 oz</button>
+                    <button class="bs3-size2" type="button" id="oreo-cremecheese-16oz" data-size="22 oz">22 oz</button>
                 </div>
             </div>
         </div>
@@ -90,13 +90,15 @@
                 <p class="title-description-location">Check out our<br>Tea Creme shop</p>
                 <p class="subtitle-description-location">Buy now and experience!</p>
                 <div class="find-us">
-                    <button class="find-us-button" type="button" onclick="window.location.href='AboutUs.html'">FIND US</button>
-                </div>
+                    <a href="https://maps.app.goo.gl/ojV3x6CMcBjhfDr17" class="find-us-button">FIND US</a>
+                </div>                
             </div>
             <div class="cheesecake-container">
                 <p class="title-more-info">Try Our<br>Cheesecake Series</p>
                 <p class="title1-more-info">Indulge in Cheesecake ecstasy.</p>
-                <button class="contact-us-button" type="button" onclick="window.location.href='AboutUs.html'">CONTACT US</button>
+                <button class="contact-us-button" type="button" onclick="window.location.href='https://www.facebook.com/profile.php?id=100063861832240'">
+                    CONTACT US
+                </button>
                 <img src="img\oreocheesecake.png" class="cheesecake-image">
             </div>
         </div>
@@ -104,7 +106,9 @@
         <div class="info-second-to-the-bottom">
             <p class="main-info-title-bottom2">Elevate your<br>Milktea game<br>with the finest<br>Flavors.</p>
             <p class="main-info-subtitle-bottom2">We are purveyors of delightful drinks that bring<br>joy to every sip. Prepare to be amazed by the<br>symphony of flavors that awaits you.</p>
-            <button class="learn-more-button2" type="button">LEARN MORE</button>
+            <a href="AboutUs.html">
+                <button class="learn-more-button2" type="button">LEARN MORE</button>
+            </a>
             <img src="img\3typemilktea.png" class="three-milkteas" alt="3typemilktea">
         </div>
 
@@ -137,7 +141,6 @@
                 <a href="OurProducts.html" class="bottom-OurProducts">Our products</a>
                 <a href="Services.html" class="bottom-Services">Service</a>
                 <a href="AboutUs.html" class="bottom-AboutUs">About Us</a>
-                <a href="" class="bottom-contactUs">Contact Us</a>
             </div>
             <div class="middle-name-logo">
                 <img src="img\LOGO.png" class="footer-logo">
@@ -149,5 +152,6 @@
             </div>
         </div>
         <script src="script.js"></script>
+        <script src="addToCartScript.js"></script>
     </body>
 </html>

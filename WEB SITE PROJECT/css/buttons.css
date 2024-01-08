@@ -1,0 +1,288 @@
+
+.txtformat{
+    position: absolute;
+    font-size: 1.25vw;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    color: black;
+    margin-top: 15.5vw;
+    margin-left: 1vw;
+}
+
+.new-flavor-container10,
+.new-flavor-container11,
+.new-flavor-container12,
+.new-flavor-container13,
+.new-flavor-container14,
+.new-flavor-container15,
+.new-flavor-container16,
+.new-flavor-container17,
+.new-flavor-container18,
+.new-flavor-container19,
+.new-flavor-container20,
+.new-flavor-container21,
+.new-flavor-container22,
+.new-flavor-container23,
+.new-flavor-container24,
+.new-flavor-container25,
+.new-flavor-container26,
+.new-flavor-container27,
+.new-flavor-container28,
+.new-flavor-container29,
+.new-flavor-container30,
+.new-flavor-container31,
+.new-flavor-container32,
+.new-flavor-container33,
+.new-flavor-container34,
+.new-flavor-container35,
+.new-flavor-container36,
+.new-flavor-container37,
+.new-flavor-container38,
+.new-flavor-container39,
+.new-flavor-container40,
+.new-flavor-container41,
+.new-flavor-container42,
+.new-flavor-container43,
+.new-flavor-container44,
+.new-flavor-container45,
+.new-flavor-container46,
+.new-flavor-container47,
+.new-flavor-container48  {
+    position: relative;
+    width: 17.5vw;
+    height: 21.5vw;
+    border-radius: 25px;
+    background-color: #F9F6EE;
+    display: flex;
+    align-items: flex-start;
+}
+
+/*Button names*/
+.nf1-size1,.nf1-size2,
+.nf2-size1,.nf2-size2,
+.nf3-size1,.nf3-size2,
+.nf4-size1,.nf4-size2,
+.nf5-size1,.nf5-size2,
+.nf6-size1,.nf6-size2,
+.nf7-size1,.nf7-size2,
+.nf8-size1,.nf8-size2,
+.nf9-size1,.nf9-size2{
+    position: relative;
+    top: 17.8vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: black;
+    border-color: black;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+
+.fs1-size1,.fs1-size2,
+.fs2-size1,.fs2-size2,
+.fs3-size1,.fs3-size2,
+.fs4-size1,.fs4-size2,
+.fs5-size1,.fs5-size2,
+.fs6-size1,.fs6-size2,
+.fs7-size1,.fs7-size2,
+.fs8-size1,.fs8-size2,
+.fs9-size1,.fs9-size2{
+    position: relative;
+    top: 17.8vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.ls1-size1,.ls1-size2,
+.ls2-size1,.ls2-size2,
+.ls3-size1,.ls3-size2{
+    position: relative;
+    top: 17.8vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.os1-size1,.os1-size2,
+.os2-size1,.os2-size2,
+.os3-size1,.os3-size2{
+    position: relative;
+    top: 17.8vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    left: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.os4-size1,.os4-size2{
+    position: relative;
+    top: 18vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.cs1-size1,.cs1-size2,
+.cs2-size1,.cs2-size2,
+.cs3-size1,.cs3-size2,
+.cs4-size1,.cs4-size2,
+.cs5-size1,.cs5-size2,
+.cs6-size1,.cs6-size2,
+.cs7-size1,.cs7-size2,
+.cs8-size1,.cs8-size2,
+.cs9-size1,.cs9-size2,
+.cs10-size1,.cs10-size2,
+.cs11-size1,.cs11-size2,
+.cs12-size1,.cs12-size2{
+    position: relative;
+    top: 17.8vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.cm1-size1,.cm1-size2,
+.cm2-size1,.cm2-size2,
+.cm3-size1,.cm3-size2,
+.cm4-size1,.cm4-size2,
+.cm5-size1,.cm5-size2,
+.cm6-size1,.cm6-size2,
+.cm7-size1,.cm7-size2,
+.cm8-size1,.cm8-size2,
+.cm9-size1,.cm9-size2
+{
+    position: relative;
+    top: 17.8vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.choco1-size1,.choco1-size2,
+.choco2-size1,.choco2-size2,
+.choco3-size1,.choco3-size2{
+    position: relative;
+    top: 17.8vw;
+    left: 1vw;
+    padding: 0.4vw .75vw;
+    font-size: 1vw;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    margin-left: 1vw;
+    color: #15154E;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+}
+
+.nf1-size1:hover, .nf1-size2:hover,
+.nf2-size1:hover, .nf2-size2:hover,
+.nf3-size1:hover, .nf3-size2:hover,
+.nf4-size1:hover, .nf4-size2:hover,
+.nf5-size1:hover, .nf5-size2:hover,
+.nf6-size1:hover, .nf6-size2:hover,
+.nf7-size1:hover, .nf7-size2:hover,
+.nf8-size1:hover, .nf8-size2:hover,
+.nf9-size1:hover, .nf9-size2:hover {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #15154E;
+    color: #F9F6EE;
+}
+
+.fs1-size1:hover, .fs1-size2:hover,
+.fs2-size1:hover, .fs2-size2:hover,
+.fs3-size1:hover, .fs3-size2:hover,
+.fs4-size1:hover, .fs4-size2:hover,
+.fs5-size1:hover, .fs5-size2:hover,
+.fs6-size1:hover, .fs6-size2:hover,
+.fs7-size1:hover, .fs7-size2:hover,
+.fs8-size1:hover, .fs8-size2:hover,
+.fs9-size1:hover, .fs9-size2:hover,
+.ls1-size1:hover, .ls1-size2:hover,
+.ls2-size1:hover, .ls2-size2:hover,
+.ls3-size1:hover, .ls3-size2:hover,
+.os1-size1:hover, .os1-size2:hover,
+.os2-size1:hover, .os2-size2:hover,
+.os3-size1:hover, .os3-size2:hover,
+.os4-size1:hover, .os4-size2:hover,
+.cs1-size1:hover, .cs1-size2:hover,
+.cs2-size1:hover, .cs2-size2:hover,
+.cs3-size1:hover, .cs3-size2:hover,
+.cs4-size1:hover, .cs4-size2:hover,
+.cs5-size1:hover, .cs5-size2:hover,
+.cs6-size1:hover, .cs6-size2:hover,
+.cs7-size1:hover, .cs7-size2:hover,
+.cs8-size1:hover, .cs8-size2:hover,
+.cs9-size1:hover, .cs9-size2:hover,
+.cs10-size1:hover, .cs10-size2:hover,
+.cs11-size1:hover, .cs11-size2:hover,
+.cs12-size1:hover, .cs12-size2:hover,
+.cm1-size1:hover, .cm1-size2:hover,
+.cm2-size1:hover, .cm2-size2:hover,
+.cm3-size1:hover, .cm3-size2:hover,
+.cm4-size1:hover, .cm4-size2:hover,
+.cm5-size1:hover, .cm5-size2:hover,
+.cm6-size1:hover, .cm6-size2:hover,
+.cm7-size1:hover, .cm7-size2:hover,
+.cm8-size1:hover, .cm8-size2:hover,
+.cm9-size1:hover, .cm9-size2:hover,
+.choco1-size1:hover, .choco1-size2:hover,
+.choco2-size1:hover, .choco2-size2:hover,
+.choco3-size1:hover, .choco3-size2:hover {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #15154E;
+    color: #F9F6EE;
+}
+
+/* Style the scrollbar in WebKit browsers */
+.new-flavors-divider::-webkit-scrollbar {
+    width: .5vw; /* Set the width of the scrollbar */
+    padding-left: 2vw;
+}
+
+.new-flavors-divider::-webkit-scrollbar-thumb {
+    background-color: #8E8EDB; /* Set the color of the thumb */
+}
+
+.new-flavors-divider::-webkit-scrollbar-track {
+    background-color: #15154E; /* Set the color of the track */
+}

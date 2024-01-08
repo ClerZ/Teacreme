@@ -8,7 +8,7 @@
 
 body {
     animation: transitionIn 0.75s;
-    background: url(../images/img/BG-CIRCLES.png);
+    background: url(../img/BG-CIRCLES.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -682,9 +682,7 @@ nav ul li a{
   }
 
   .quantity-textbox {
-    position: relative;
-    width: 2vw; 
-    left: .5vw;
+    width: 40px; /* Adjust the width as needed */
     text-align: center;
     font-family: 'Outfit', sans-serif;
     margin: 0 5px; /* Add some margin for better spacing */

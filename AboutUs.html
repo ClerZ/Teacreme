@@ -6,10 +6,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">    
-        <link rel="stylesheet" href="css\AboutUSstyles.css">
     </head>
     <body>
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="css\AboutUSstyles.css">
         <header class="main-header">
             <img src="img\NAVBAR.png" class="main-navbar">
             <img src="img\LOGO.png" class="main-logo" alt="Logo">
@@ -20,20 +19,25 @@
                         <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
                         <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
                         <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
-                        <li><a class="open-cart-button" onclick="toggleCart()"><img src="img\NAV-CART-ICON.png" class="cart" alt="cart"></a></li>
+                        <li><a class="open-cart-button" onclick="toggleCart()">
+                            <img src="img\NAV-CART-ICON.png" class="cart" alt="cart">
+                            <span id="totalItemsElement" class="total-items-circle">0</span>
+                        </a></li>
 
                         <div class="cart-container">
                             <div class="cart-header">
                                 <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
                                 <p class="my-cart">My Cart</p>
                             </div>
-                            <div class="cart-items"></div>
                             <ul id="cartItems"></ul>
                             <div class="checkout-div" id="cartSummary">
-                                <p class="final-amount">Total: <span id="totalAmount">Php 0.00</span></p>
-                                <button id="checkoutButton">Checkout Now</button>
+                                <p class="final-amount">Total: <span id="yourTotalAmountElement">Php 0.00</span></p>
+                                <a href="checkoutPage.html">
+                                    <button onclick="checkout()" id="checkoutButton" >Checkout Now</button>
+                                </a>
                             </div>
                         </div>
+
                     </ul>
                 </div>
             </nav>
@@ -65,6 +69,29 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <img src="img\firststore.png" class="firststoreImage" alt="firstshop">
+            </div>
+            
         </div>
+
+        <div class="footer-bottom">
+            <div class="footer-buttons">
+                <p href="index.html" class="main-name1-footer">TEA CREME</p>
+                <a href="OurProducts.html" class="bottom-OurProducts">Our products</a>
+                <a href="Services.html" class="bottom-Services">Service</a>
+                <a href="AboutUs.html" class="bottom-AboutUs">About Us</a>
+            </div>
+            <div class="middle-name-logo">
+                <img src="img\LOGO.png" class="footer-logo">
+                <p class="main-name2-footer">TEA CREME</p>
+            </div>
+            <div class="footer-info">
+                <p class="main-name1-footer">OPEN HOURS</p>
+                <p class="date-time">Mon - Fri<br>5:00PM - 11:00PM</p>
+            </div>
+        </div>
+        <script src="addToCartScript.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
