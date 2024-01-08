@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="icon" href="../images/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../images/img/favicon.ico" type="image/x-icon">
+        <title>TEA CREAM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">    
+    </head>
+    <body>
+        <link rel="stylesheet" href="..\css\AboutUSstyles.css">
+        <header class="main-header">
+            <img src="..\images\img\NAVBAR.png" class="main-navbar">
+            <img src="..\images\img\LOGO.png" class="main-logo" alt="Logo">
+            <h1 class="business-name"><a href="index.html" class="clickable-name">TEA CREME</a></h1>
+            <nav class="top-menu">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
+                        <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
+                        <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
+                        <li><a class="open-cart-button" onclick="toggleCart()">
+                            <img src="..\images\img\NAV-CART-ICON.png" class="cart" alt="cart">
+                            <span id="totalItemsElement" class="total-items-circle">0</span>
+                        </a></li>
+
+                        <div class="cart-container">
+                            <div class="cart-header">
+                                <img src="..\images\img/cart-icon.svg" alt="cart" class="cart-icon">
+                                <p class="my-cart">My Cart</p>
+                            </div>
+                            <ul id="cartItems"></ul>
+                            <div class="checkout-div" id="cartSummary">
+                                <p class="final-amount">Total: <span id="yourTotalAmountElement">Php 0.00</span></p>
+                                <a href="checkoutPage.html">
+                                    <button onclick="checkout()" id="checkoutButton" >Checkout Now</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="about-us-conntainer">
+            <div class="about-us-picture-container">
+                <img src="..\images\img\AboutUsShopImage.png" class="shop-image" alt="Shop-Image">
+            </div>
+            <div class="about-us-text-container">
+                <p class="aboutus-main-text">About Us</p>
+                <img src="..\images\img\dividerline.png" class="divider-line" alt="divider-line">
+                <p class="aboutus-sub-text">Welcome to Tea Creme, your one-stop<br>shop for the best milk tea in town! We offer<br>a wide variety of milk tea flavors, including<br>classics like taro and boba, as well as more<br>unique flavors like our Cheesecake<br>and Oreo series!<br>
+                    <br>We also offer a variety of other beverages,<br>including Lemonades and Frappe Series.</p>
+            </div>
+        </div>
+
+        <div class="WhatsOurStory">
+            
+            <div class="story-info">
+                <p>What's Our Story</p>
+            </div>
+            <img src="..\images\img\dividerline.png" class="divider-line2" alt="divider-line">
+            <div class="scrollable-description">
+                <div class="scrollable-container">
+                    <div class="story-description">
+                        <p>Our journey as Tea Creme began in 2020 as a simple milk tea shop dedicated to crafting delightful drinks for those who like to crave sweet, refreshing, and trendy cold beverages. In 2021, under the same ownership, we collaborated with our sister store ‘Kebab n’ Wrap’—“May pambara na, may panulak pa!”, to serve perfect combinations of delicious foods and drinks hand in hand in H. Santos St, Brgy. Tejeros, Makati.<br><br>
+                        However, due to the challenges posed by the pandemic, we temporarily closed our doors in a responsible effort to curb the spread of COVID-19. But then again, we bounced back with resilience, reopening after a few weeks and unveiling new branches in Las Pinas and BGC, ensuring the continuation of serving the creamiest milk tea in town!<br><br>Indeed, a cup of Tea Creme shared with friends is a good memory that never ends!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="..\images\img\firststore.png" class="firststoreImage" alt="firstshop">
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-buttons">
+                <p href="index.html" class="main-name1-footer">TEA CREME</p>
+                <a href="OurProducts.html" class="bottom-OurProducts">Our products</a>
+                <a href="Services.html" class="bottom-Services">Service</a>
+                <a href="AboutUs.html" class="bottom-AboutUs">About Us</a>
+            </div>
+            <div class="middle-name-logo">
+                <img src="..\images\img\LOGO.png" class="footer-logo">
+                <p class="main-name2-footer">TEA CREME</p>
+            </div>
+            <div class="footer-info">
+                <p class="main-name1-footer">OPEN HOURS</p>
+                <p class="date-time">Mon - Fri<br>5:00PM - 11:00PM</p>
+            </div>
+        </div>
+        <script src="..\js\addToCartScript.js"></script>
+        <script src="..\js\script.js"></script>
+    </body>
+</html>

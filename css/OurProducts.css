@@ -8,7 +8,7 @@
 
 body {
     animation: transitionIn 0.75s;
-    background: url(../img/BG-CIRCLES.png);
+    background: url(../images/img/BG-CIRCLES.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -331,9 +331,9 @@ nav ul li a{
 }
 
 .middle-name-logo{
-    position: absolute;
-    margin-top: -13.5vw;
-    margin-left: 47.5vw;
+  position: absolute;
+  margin-top: -10.5vw;
+  margin-left: 47.5vw;
 }
 
 .footer-logo{
@@ -383,20 +383,20 @@ nav ul li a{
 
 
 .footer-info {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.5vw;
-    color: #F9F6EE;
-    bottom: 13.5vw;
-    padding-right: 12.5vw;
-    position: relative;
-    float: right;
-  }
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5vw;
+  color: #F9F6EE;
+  bottom: 10.8vw;
+  padding-right: 12.5vw;
+  position: relative;
+  float: right;
+}
 
 .date-time{
-    position: relative;
-    padding-top: -1vw;
-    padding-left: -2vw;
-    line-height: 2vw;
+  position: relative;
+  padding-top: -1vw;
+  padding-left: -2vw;
+  line-height: 2vw;
 }
 
 /*SEARCH BAR*/
@@ -465,62 +465,60 @@ nav ul li a{
   }
 
   .cart-container {
-        position: fixed;
-        top: 6.8vw;
-        right: -300vw;
-        width: 22vw;
-        height: 85%;
-        background-color: #fff;
-        border-radius: 25px 25px 25px 25px;
-        border: 2px solid #15154E ;
-        transition: right 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: center;  
-    }
-
-    .cart-header {
-        display: flex;
-        position: relative;
-        align-items: center;
-        background-color: #89D0D1;
-        color: #15154E;
-        padding: 10px;
-        width: 12vw;
-        height: 3.8vw;
-        top: 8px;
-        text-align: center;
-        font-size: 1.8vw;
-        font-weight: 600;
-        border-radius: 40px;
-        margin: 16px auto;
-    }
-
-    .cart-icon {
-        position: block;
-        margin-top: 0px;
-        padding-left: .8vw;
-        width: 3.4vw;
-    }
-
-    .my-cart {
-        display:block;
-        margin-top: 0vw;
-        font-size: 1.8vw;
-        padding-left: 0vw;
-    }
-
-    #cartItems {
-        max-height: 30vw; /* Set a maximum height as needed */
-        overflow-y: auto; /* Enable vertical scrolling if content overflows */
-        padding: 0; /* Remove default padding to prevent extra space */
-        list-style-type: none; /* Remove default list styling */
-    }
-    
-
-  .cart-items {
-    padding: 10px;
+    position: fixed;
+    top: 6.8vw;
+    right: -300vw;
+    width: 22vw;
+    height: 41.2vw;
+    background-color: #fff;
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #15154E ;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
   }
+
+  .cart-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #89D0D1;
+    color: #15154E;
+    padding: 10px;
+    width: 12vw;
+    height: 3.8vw;
+    top: 0vw;
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 600;
+    border-radius: 40px;
+    margin: 16px auto;
+  }
+
+  .cart-icon {
+    position: block;
+    margin-top: 0px;
+    padding-left: .8vw;
+    width: 3.4vw;
+  }
+
+  .my-cart {
+    display:flex;
+    margin-top: 0vw;
+    font-size: 1.6vw;
+    padding-left: 0vw;
+  }
+
+  #cartItems {
+    margin-top: 0vw;
+    position: relative;
+    max-height: 72.5%; /* Set a maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: hidden;
+    padding: 0; /* Remove default padding to prevent extra space */
+    list-style-type: none; /* Remove default list styling */
+  } 
 
   .open-cart-button {
     cursor: pointer;
@@ -528,85 +526,145 @@ nav ul li a{
 
   .cart-item-container {
     display: flex;
-    border: 2px solid #15154E;  
-    border-radius: 25px 25px 25px 25px;
-    background-color: rgba(170, 217, 217, 0.3);    
-    padding: 15px;
+    position: relative;
+    border: .15vw solid #15154E;
+    border-radius: 2vw 2vw 2vw 2vw;
+    background-color: rgba(170, 217, 217, 0.3);
+    padding: 1vw;
     margin-bottom: .5vw;
     width: 20.5vw;
-    margin-left:6px;
+    height: 7vw;
+    margin-left: 6px;
     font-family: 'Outfit', sans-serif;
     font-weight: 505;
   }
-
-  .cart{
+  
+  .cart {
     display: flex;
     position: absolute;
     top: 1.09vw;
     width: 2.73vw;
   }
-
+  
   .cart-item-image {
     font-family: 'Outfit', sans-serif;
-    width: 80px; /* Set your desired width */
-    height: 80px; /* Set your desired height */
-    border-radius: 20px 20px 20px 20px;
+    width: 5vw; /* Set your desired width */
+    border-radius: 45px 45px 45px 45px;
     margin-right: 10px;
     border-radius: 5px;
   }
-
+  
   .cart-item-text {
     /* Add styles for the text within the cart item */
-    font-size: 20px;
-    color: black; /* Adjust the color as needed */
-}
+    position:static;
+    padding-left: 6vw;
+    margin-top: -5.9vw;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    color: #15154E; /* Adjust the color as needed */
+    font-weight: 600;
+    overflow-y: hidden;
+  }
+
+  .cart-item-price{
+    position:static;
+    padding-left: 14.5vw;
+    margin-top: -2vw;
+    font-size: 1.2vw;
+    color: #15154E; /* Adjust the color as needed */
+    overflow-y: hidden;
+  }
+  
+  .cart-items {
+    padding: 10px;
+    overflow-y: hidden;
+  }
+
+    
+  .quantity-container{
+    position: relative;
+    display: flex;
+    left: 6vw;
+    top: 0.7vw;
+    overflow-y: hidden;
+  }
+
+  .quantity-textbox {
+    color: #15154E; /* Text color */
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+    background-color: transparent; /* Make background transparent */
+    font-weight: 600;
+    font-size: 1.5vw;
+    pointer-events: none;
+    position:relative;
+    left: .4vw;
+  }
+
+
+  .delete-button{
+    position: relative;
+    font-size: 1vw;
+    left: 14.5vw;
+    top: -.9vw;
+  }
+  
 
 
 /*CART SUMMARY*/
 
-/* Add this updated CSS */
-.checkout-div {
-    position: fixed;
+  .checkout-div {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 36.5vw; /* Adjust the margin as needed */
+    top: 14.8vw;
+    margin-top: 100%; /* Adjust the margin as needed */
     margin-left: .0vw;
     height: 4.5vw;
     width: 21.9vw;
     background-color: rgba(172, 172, 255, 0.3);
     border-radius: 0px 0px 23px 23px;
     border: 1px solid black;
-}
+  }
 
-#checkoutButton {
-    margin-top: 14px; /* Adjust the margin as needed */
+  #checkoutButton {
+    position: relative;
+    margin-top: 2vw; /* Adjust the margin as needed */
     font-family: 'Outfit', sans-serif;
     background-color: #89D0D1;
     color: white;
     border: none;
     font-size: 1vw;
-    padding: 5px 15px 5px 15px;
+    padding: .3vw 1vw .3vw 1vw;
     border-radius: 5px 5px 5px 5px;
-}
+  }
 
-.final-amount{
+  #checkoutButton:hover{
+    color: #89D0D1;
+    background-color: #8E8EDB;
+    cursor: pointer;
+
+  }
+
+  .final-amount{
+    position: absolute;
     font-family: 'Outfit', sans-serif;
     color: #15154E;
+    margin-top: .25vw;
     font-weight: 600;
-}
+    font-size: 1vw;
+  }
 
+  .hidden {
+    display: none;
+  }
 
-.hidden {
-  display: none;
-}
-
-/* Style the cartMessage */
-#cartMessage {
-  color: #4caf50;
-  margin-top: 10px;
-}
-
+  /* Style the cartMessage */
+  #cartMessage {
+    color: #4caf50;
+    margin-top: 10px;
+  }
 
   .quantity-container {
     display: flex;
@@ -624,8 +682,33 @@ nav ul li a{
   }
 
   .quantity-textbox {
-    width: 40px; /* Adjust the width as needed */
+    position: relative;
+    width: 2vw; 
+    left: .5vw;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     margin: 0 5px; /* Add some margin for better spacing */
   }
+
+  .total-items-circle {
+    position: relative;
+    top: .5vw;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5vw;
+    left: 1.6vw; /* Add margin for spacing */
+  }  
+
+
+  /*
+  PAG NAG PINDOT ULI AKO NG 16 OR 22 OZ DI NAG UUPDATE YUNG PRICE
+  YUNG RESPONSIVENESS NIYA DI NAGANA
+  I FIX KO PA YUNG MISMONG LAYOUT NG MY CART
+  CHECKOUT PAGE THEN TAPOS NA
+  */

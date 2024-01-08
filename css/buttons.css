@@ -9,6 +9,54 @@
     margin-left: 1vw;
 }
 
+.new-flavor-container10,
+.new-flavor-container11,
+.new-flavor-container12,
+.new-flavor-container13,
+.new-flavor-container14,
+.new-flavor-container15,
+.new-flavor-container16,
+.new-flavor-container17,
+.new-flavor-container18,
+.new-flavor-container19,
+.new-flavor-container20,
+.new-flavor-container21,
+.new-flavor-container22,
+.new-flavor-container23,
+.new-flavor-container24,
+.new-flavor-container25,
+.new-flavor-container26,
+.new-flavor-container27,
+.new-flavor-container28,
+.new-flavor-container29,
+.new-flavor-container30,
+.new-flavor-container31,
+.new-flavor-container32,
+.new-flavor-container33,
+.new-flavor-container34,
+.new-flavor-container35,
+.new-flavor-container36,
+.new-flavor-container37,
+.new-flavor-container38,
+.new-flavor-container39,
+.new-flavor-container40,
+.new-flavor-container41,
+.new-flavor-container42,
+.new-flavor-container43,
+.new-flavor-container44,
+.new-flavor-container45,
+.new-flavor-container46,
+.new-flavor-container47,
+.new-flavor-container48  {
+    position: relative;
+    width: 17.5vw;
+    height: 21.5vw;
+    border-radius: 25px;
+    background-color: #F9F6EE;
+    display: flex;
+    align-items: flex-start;
+}
+
 /*Button names*/
 .nf1-size1,.nf1-size2,
 .nf2-size1,.nf2-size2,
