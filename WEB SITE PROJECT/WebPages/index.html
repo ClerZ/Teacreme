@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>TEA CREAM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">    
+        <link rel="stylesheet" href="..\css\styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <img src="..\images\img\NAVBAR.png" class="main-navbar">
+            <img src="..\images\img\LOGO.png" class="main-logo" alt="Logo">
+            <h1 class="business-name"><a href="index.html" class="clickable-name">TEA CREME</a></h1>
+            <nav class="top-menu">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
+                        <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
+                        <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
+                        <li><a class="open-cart-button" onclick="toggleCart()">
+                            <img src="..\images\img\NAV-CART-ICON.png" class="cart" alt="cart">
+                            <span id="totalItemsElement" class="total-items-circle">0</span>
+                        </a></li>
+                        
+                        <div class="cart-container">
+                            <div class="cart-header">
+                                <img src="..\images\img/cart-icon.svg" alt="cart" class="cart-icon">
+                                <p class="my-cart">My Cart</p>
+                            </div>
+                            <ul id="cartItems"></ul>
+                            <div class="checkout-div" id="cartSummary">
+                                <p class="final-amount">Total: <span id="yourTotalAmountElement">Php 0.00</span></p>
+                                <button id="checkoutButton">Checkout Now</button>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="main-title-container">
+            <div class="main-tagline">
+                <h1>Indulge In<br>The Creamy<br>Goodness</h1>
+            </div>
+            <div class="sub-tagline">
+                <div>
+                    <p>Savor the rich charm of Tea Crème, a smooth <br>blend that combines the calming properties of<br> 
+                        tea with a rich, creamy touch</p>    
+                </div>
+                <div class="upper-two-buttons">
+                    <button onclick="window.location.href='OurProducts.html'" class="pill-button" type="button">ORDER NOW</button>
+                    <button class="more-menu-pill-button" type="button">MORE MENU</button>
+                </div>
+            </div>
+            <div class="strawberry-milktea">
+                <img src="..\images\img\strawberry-milktea.png">
+            </div>
+        </div>
+
+        <div class="bestsellers-container-class">
+            <h1 class="best-sellers">BEST SELLERS</h1>
+            <div class="rounded-bottom-container-square">
+                <div class="new-flavor-container1">
+                    <img src="..\images\img\bestsellers1.png" class="bestsellers1">
+                    <p class="txtformat">Wintermellon</p>
+                    <button class="bs1-size1" type="button" id="wintermellon-16oz" data-size="16 oz">16 oz</button>
+                    <button class="bs1-size2" type="button" id="wintermellon-22oz" data-size="22 oz">22 oz</button>
+                    
+                </div>
+                <div class="new-flavor-container2">
+                    <img src="..\images\img\bestsellers2.png" class="bestsellers2">
+                    <p class="txtformat">Okinawa</p>
+                    <button class="bs2-size1" type="button" id="okinawa-16oz" data-size="16 oz">16 oz</button>
+                    <button class="bs2-size2" type="button" id="okinawa-22oz" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container3">
+                    <img src="..\images\img\bestsellers3.png" class="bestsellers3">
+                    <p class="txtformat">Oreo Cremecheese</p>
+                    <button class="bs3-size1" type="button" id="oreo-cremecheese-16oz" data-size="16 oz">16 oz</button>
+                    <button class="bs3-size2" type="button" id="oreo-cremecheese-16oz" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="more-info">
+            <img src="..\images\img\place.png" class="place-image">
+            <div class="rounded-upper-right-square">
+                <p class="title-description-location">Check out our<br>Tea Creme shop</p>
+                <p class="subtitle-description-location">Buy now and experience!</p>
+                <div class="find-us">
+                    <a href="https://maps.app.goo.gl/ojV3x6CMcBjhfDr17" class="find-us-button">FIND US</a>
+                </div>                
+            </div>
+            <div class="cheesecake-container">
+                <p class="title-more-info">Try Our<br>Cheesecake Series</p>
+                <p class="title1-more-info">Indulge in Cheesecake ecstasy.</p>
+                <button class="contact-us-button" type="button" onclick="window.location.href='https://www.facebook.com/profile.php?id=100063861832240'">
+                    CONTACT US
+                </button>
+                <img src="..\images\img\oreocheesecake.png" class="cheesecake-image">
+            </div>
+        </div>
+
+        <div class="info-second-to-the-bottom">
+            <p class="main-info-title-bottom2">Elevate your<br>Milktea game<br>with the finest<br>Flavors.</p>
+            <p class="main-info-subtitle-bottom2">We are purveyors of delightful drinks that bring<br>joy to every sip. Prepare to be amazed by the<br>symphony of flavors that awaits you.</p>
+            <a href="AboutUs.html">
+                <button class="learn-more-button2" type="button">LEARN MORE</button>
+            </a>
+            <img src="..\images\img\3typemilktea.png" class="three-milkteas" alt="3typemilktea">
+        </div>
+
+        <div class="info-bottom">
+            <p class="info-bottom-title">Why Are We Different</p>
+            <p class="info-bottom-subtitle">We don't just make your drinks, we make your day!</p>
+            <img src="..\images\img\bottom-info-container.png" alt="" class="bottom-info-container-bgpic">
+            <div class="info-bottom-container">
+                <div class="highquality-container">
+                    <img src="..\images\img\quality-icon.png" class="quality-icon" alt="high-quality">
+                    <p class="highquality">HIGH QUALITY</p>
+                    <p class="highquality-desc">We provide the highest<br>quality</p>
+                </div>
+                <div class="extraordinary-container">
+                    <img src="..\images\img\extraord-icon.png" class="extraordinary-icon" alt="extra-ordinary">
+                    <p class="extraord">EXTRA ORDINARY</p>
+                    <p class="extraord-desc">Drinks like you have<br>never tasted</p>
+                </div>
+                <div class="affordableprice-container">
+                    <img src="..\images\img\affordable-icon.png" class="affordable-icon" alt="affordable-price">
+                    <p class="affordable">AFFORDABLE PRICE</p>
+                    <p class="affordable-desc">Our drinks prices are<br>easy to afford</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-buttons">
+                <p href="index.html" class="main-name1-footer">TEA CREME</p>
+                <a href="OurProducts.html" class="bottom-OurProducts">Our products</a>
+                <a href="Services.html" class="bottom-Services">Service</a>
+                <a href="AboutUs.html" class="bottom-AboutUs">About Us</a>
+            </div>
+            <div class="middle-name-logo">
+                <img src="..\images\img\LOGO.png" class="footer-logo">
+                <p class="main-name2-footer">TEA CREME</p>
+            </div>
+            <div class="footer-info">
+                <p class="main-name1-footer">OPEN HOURS</p>
+                <p class="date-time">Mon - Fri<br>5:00PM - 11:00PM</p>
+            </div>
+        </div>
+        <script src="..\js\script.js"></script>
+        <script src="..\js\addToCartScript.js"></script>
+    </body>
+</html>

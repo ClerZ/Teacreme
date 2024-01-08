@@ -1,0 +1,379 @@
+<html>
+    <head>
+        <link rel="icon" href="../images/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../images/img/favicon.ico" type="image/x-icon">
+        <title>TEA CREAM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">    
+        <link rel="stylesheet" href="..\css\OurProducts.css">
+        <link rel="stylesheet" href="..\css\buttons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    </head>
+    <body>
+        <header class="main-header">
+            <img src="..\images\img\NAVBAR.png" class="main-navbar">
+            <img src="..\images\img\LOGO.png" class="main-logo" alt="Logo">
+            <h1 class="business-name"><a href="index.html" class="clickable-name">TEA CREME</a></h1>
+            <nav class="top-menu">
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="OurProducts.html" class="btnProducts" id="productsBtn">Our Products</a></li>
+                        <li><a href="Services.html" class="btnServices" id="servicesBtn">Services</a></li>
+                        <li><a href="AboutUs.html" class="btnAboutUs" id="aboutBtn">About Us</a></li>
+                        <li><a class="open-cart-button" onclick="toggleCart()">
+                            <img src="..\images\img\NAV-CART-ICON.png" class="cart" alt="cart">
+                            <span id="totalItemsElement" class="total-items-circle">0</span>
+                        </a></li>
+
+                        <div class="cart-container">
+                            <div class="cart-header">
+                                <img src="..\images\img/cart-icon.svg" alt="cart" class="cart-icon">
+                                <p class="my-cart">My Cart</p>
+                            </div>
+                            <ul id="cartItems"></ul>
+                            <div class="checkout-div" id="cartSummary">
+                                <p class="final-amount">Total: <span id="yourTotalAmountElement">Php 0.00</span></p>
+                                <a href="checkoutPage.html">
+                                    <button onclick="checkout()" id="checkoutButton" >Checkout Now</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="menu-title-divider">
+            <p class="menu">MENU</p>
+        </div>
+        <div class="drinks-types-divider">
+            <p class="main-drinks-name">Drinks</p>
+            <p><a href="#new-flavors" class="scroll-link">New Flavors</a></p>
+            <p><a href="#frappe-series " class="scroll-link">Frappe Series</a></p>
+            <p><a href="#lemonade-series" class="scroll-link">Lemonade Series</a></p>
+            <p><a href="#oreo-series" class="scroll-link">Oreo Series</a></p>
+            <p><a href="#creamcheese-series" class="scroll-link">Creamcheese Series</a></p>
+            <p><a href="#classic-milktea" class="scroll-link">Classic Milktea</a></p>
+            <p><a href="#chocolate-milktea" class="scroll-link">Chocolate Milktea</a></p>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="">
+            <button class="search-button" onclick="performSearch()">
+              <img src="..\images\img\search-icon.png" class="search-icon" alt="search-logo">
+            </button>
+        </div>
+        
+          <div id="searchResults"></div>
+        <div class="new-flavors-divider">
+            <p class="new-flavor-title" id="new-flavors">New Flavors</p>
+            <div class="container1">
+                <div class="new-flavor-container1">
+                    <p class="txtformat">Avocado</p>
+                    <button class="nf1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf1-size1" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container2">
+                    <p class="txtformat">Honey Dew</p>
+                    <button class="nf2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container3">
+                    <p class="txtformat">Espresso</p>
+                    <button class="nf3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container4">
+                    <p class="txtformat">Caramel Machito</p>
+                    <button class="nf4-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf4-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container5">
+                    <p class="txtformat">Black Jungle</p>
+                    <button class="nf5-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf5-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container6">
+                    <p class="txtformat">Nuttella Cream</p>
+                    <button class="nf6-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf6-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container7">
+                    <p class="txtformat">Cashew White</p>
+                    <button class="nf7-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf7-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container8">
+                    <p class="txtformat">Coffee Cake</p>
+                    <button class="nf8-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf8-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container9">
+                    <p class="txtformat">Meiji Apollo</p>
+                    <button class="nf9-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="nf9-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+            <p class="new-flavor-title" id="frappe-series">Frappe Series</p>
+            <div class="container1">
+                <div class="new-flavor-container10">
+                    <p class="txtformat">Mango Graham</p>
+                    <button class="fs1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs1-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container11">
+                    <p class="txtformat">Strawberry</p>
+                    <button class="fs2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container12">
+                    <p class="txtformat">Ube Quezo</p>
+                    <button class="fs3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container13">
+                    <p class="txtformat">Coffee Jelly</p>
+                    <button class="fs4-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs4-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container14">
+                    <p class="txtformat">Salted Caramel</p>
+                    <button class="fs5-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs5-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container15">
+                    <p class="txtformat">Ferrero Almond</p>
+                    <button class="fs6-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs6-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container16">
+                    <p class="txtformat">Matcha White</p>
+                    <button class="fs7-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs6-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container17">
+                    <p class="txtformat">Blueberry</p>
+                    <button class="fs8-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs8-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container18">
+                    <p class="txtformat">Oreo Flurry</p>
+                    <button class="fs9-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="fs9-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+            <p class="new-flavor-title" id="lemonade-series">Lemonade Series</p>
+            <div class="container1">
+                <div class="new-flavor-container19">
+                    <p class="txtformat">Lemon Yakult Cucumber</p>
+                    <button class="ls1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="ls1-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container20">
+                    <p class="txtformat">Lemon Yakult</p>
+                    <button class="ls2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="ls2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container21">
+                    <p class="txtformat">Lemon Cucumber</p>
+                    <button class="ls3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="ls3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+            <p class="new-flavor-title2" id="oreo-series">OREO Series</p>
+            <div class="container2">
+                <div class="new-flavor-container22">
+                    <p class="txtformat">Oreo Cheesecake</p>
+                    <button class="os1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="os1-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container23">
+                    <p class="txtformat">Oreo MilkCake</p>
+                    <button class="os2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="os2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container24">
+                    <p class="txtformat">Oreo Cookie Crumble</p>
+                    <button class="os3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="os3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container47">
+                    <p class="txtformat">Oreo Strawberry</p>
+                    <button class="os4-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="os4-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+            <p class="new-flavor-title" id="creamcheese-series">Creamcheese Series</p>
+            <div class="container1">
+                <div class="new-flavor-container25">
+                    <p class="txtformat">Cheesecake</p>
+                    <button class="cs1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs1-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container26">
+                    <p class="txtformat">Matcha</p>
+                    <button class="cs2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container27">
+                    <p class="txtformat">Cheese Mango</p>
+                    <button class="cs3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container28">
+                    <p class="txtformat">Salted Caramel</p>
+                    <button class="cs4-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs4-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container29">
+                    <p class="txtformat">Ube Taro</p>
+                    <button class="cs5-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs5-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container30">
+                    <p class="txtformat">Strawberry</p>
+                    <button class="cs6-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs6-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container31">
+                    <p class="txtformat">Chucky</p>
+                    <button class="cs7-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs7-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container32">
+                    <p class="txtformat">Red Velvet</p>
+                    <button class="cs8-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs8-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container33">
+                    <p class="txtformat">Melona</p>
+                    <button class="cs9-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs9-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container34">
+                    <p class="txtformat">Hershey Cremecheese</p>
+                    <button class="cs10-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs10-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container35">
+                    <p class="txtformat">Dark Chocolate</p>
+                    <button class="cs11-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs11-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container36">
+                    <p class="txtformat">Chocolate</p>
+                    <button class="cs12-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cs12-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+            <p class="new-flavor-title3" id="classic-milktea">Classic Milktea</p>
+            <div class="container1">
+                <div class="new-flavor-container37">
+                    <img src="classics\wintermelon.png" alt="Winter Melon" class="pic-size">
+                    <p class="txtformat">Wintermellon</p>
+                    <button class="cm1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm1-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container38">
+                    <img src="classics\okinawa.png" alt="okinawa" class="pic-size">
+
+                    <p class="txtformat">Okinawa</p>
+                    <button class="cm2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container39">
+                    <img src="classics\cheesecake.png" alt="cheesecake" class="pic-size">
+
+                    <p class="txtformat">Cheesecake</p>
+                    <button class="cm3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container40">
+                    <img src="classics\cookiesNcream.png" alt="cookiesNcream" class="pic-size">
+
+                    <p class="txtformat">Cookies N Cream</p>
+                    <button class="cm4-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm4-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container41">
+                    <img src="classics\hokkaido.png" alt="hokkaido" class="pic-size">
+
+                    <p class="txtformat">Hokkaido</p>
+                    <button class="cm5-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm5-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container42">
+                    <img src="classics\vanilla.png" alt="vanilla" class="pic-size">
+
+                    <p class="txtformat">Vanilla</p>
+                    <button class="cm6-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm6-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container43">
+                    <img src="classics\saltedCaramel.png" alt="saltedCaramel" class="pic-size">
+
+                    <p class="txtformat">Salted Caramel</p>
+                    <button class="cm7-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm7-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container44">
+                    <img src="classics\thai.png" alt="thai" class="pic-size">
+
+                    <p class="txtformat">Thai</p>
+                    <button class="cm8-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm8-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container45">
+                    <img src="classics\whiteRabbit.png" alt="whiterabbit" class="pic-size">
+
+                    <p class="txtformat">White Rabbit</p>
+                    <button class="cm9-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="cm9-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+            <p class="new-flavor-title" id="chocolate-milktea">Chocolate Milktea</p>
+            <div class="container1">
+                <div class="new-flavor-container46">
+                    <p class="txtformat">Chocolate</p>
+                    <button class="choco1-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="choco1-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container47">
+                    <p class="txtformat">Dark Chocolate</p>
+                    <button class="choco2-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="choco2-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+                <div class="new-flavor-container48">
+                    <p class="txtformat">Hershey Chocolate</p>
+                    <button class="choco3-size1" type="button" data-size="16 oz">16 oz</button>
+                    <button class="choco3-size2" type="button" data-size="22 oz">22 oz</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-buttons">
+                <p href="index.html" class="main-name1-footer">TEA CREME</p>
+                <a href="OurProducts.html" class="bottom-OurProducts">Our products</a>
+                <a href="Services.html" class="bottom-Services">Service</a>
+                <a href="AboutUs.html" class="bottom-AboutUs">About Us</a>
+            </div>
+            <div class="middle-name-logo">
+                <img src="..\images\img\LOGO.png" class="footer-logo">
+                <p class="main-name2-footer">TEA CREME</p>
+            </div>
+            <div class="footer-info">
+                <p class="main-name1-footer">OPEN HOURS</p>
+                <p class="date-time">Mon - Fri<br>5:00PM - 11:00PM</p>
+            </div>
+        </div>
+        <script src="..\js\script.js"></script>
+        <script src="..\js\addToCartScript.js"></script>
+    </body>
+</html>
